@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeueLTW1G-Md.woff2") format("woff2"), url("../fonts/HelveticaNeueLTW1G-Md.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeueLTW1G-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeueLTW1G-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeueLTW1G-Lt.woff2") format("woff2"), url("../fonts/HelveticaNeueLTW1G-Lt.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeueLTW1G-Bd.woff2") format("woff2"), url("../fonts/HelveticaNeueLTW1G-Bd.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeueLTW1G-UltLt.woff2") format("woff2"), url("../fonts/HelveticaNeueLTW1G-UltLt.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeueLTW1G-Th.woff2") format("woff2"), url("../fonts/HelveticaNeueLTW1G-Th.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IowanOldSt";
+  src: url("../fonts/IowanOldStyleBTPro-Roman.woff2") format("woff2"), url("../fonts/IowanOldStyleBTPro-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "HelveticaNeue";
+  font-size: 14px !important;
+  color: #121212 !important;
+  overflow-x: hidden !important;
+  background: #dddedf;
+}
+
+.card {
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: 0 0.75rem 6rem rgba(56, 65, 74, 0.03);
+}
+
+.oneborder-select {
+  border: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px) !important;
+  padding: 0.375rem 5px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #121212;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-bottom: 1.5px solid #707070;
+}
+
+.oneborder-table {
+  border-bottom: 1px solid #707070 !important;
+}
+
+.btn-custom {
+  padding: 0.54rem 2.75rem !important;
+  border-radius: 0px !important;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px !important;
+}
+
+.btn-icon-custom {
+  padding: 10px 11px !important;
+  border-radius: 0px !important;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.btn-blue {
+  background: linear-gradient(to right, #9429ff, #4447d2 67%);
+  color: #ffffff !important;
+}
+
+.btn-outline-blue {
+  color: #4447d2;
+  border-color: #4447d2;
+}
+
+.inputbox-one {
+  border: none !important;
+  border-bottom: 1px solid #707070 !important;
+  border-radius: 0px !important;
+}
+
+.card-heading {
+  font-size: 28px;
+  font-family: "IowanOldSt";
+  margin-bottom: 20px;
+}
+
+.table > :not(:last-child) > :last-child > * {
+  border-bottom: none !important;
+}
+
+.table {
+  font-size: 14px !important;
+  border-color: rgba(224, 224, 224, 0.18) !important;
+}
+.table thead {
+  color: #a4a4a4 !important;
+}
+.table thead th {
+  font-weight: lighter !important;
+}
+.table tbody th {
+  color: #d8d8d8;
+  font-weight: 500 !important;
+  vertical-align: middle;
+}
+.table tbody tr td {
+  font-weight: 400 !important;
+  padding: 0.7rem 0.5rem !important;
+  vertical-align: middle;
+}
+.table .dropdown-menu {
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2);
+  font-size: 14px !important;
+}
+
+.table-custom tbody th {
+  color: #4447d2 !important;
+}
+.table-custom tbody tr td {
+  text-align: center !important;
+}
+.table-custom thead {
+  color: #4447d2 !important;
+}
+.table-custom thead th {
+  font-weight: 500 !important;
+}
+.table-custom .t-head th {
+  color: #d8d8d8 !important;
+}
+
+.bg-image {
+  background-image: linear-gradient(to left, rgba(148, 41, 255, 0.4), rgba(68, 71, 210, 0.85)), url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: 100% center;
+}
+
+.login-container {
+  padding: 20px;
+  background: #ffffff;
+}
+.login-container .form-control {
+  font-family: "HelveticaNeue" !important;
+  border-radius: 0px !important;
+  border-color: #121212 !important;
+  font-size: 14px !important;
+  padding: 0.7rem 0.75rem !important;
+}
+.login-container .forgot-p {
+  text-align: right;
+  font-size: 12px;
+}
+.login-container .forgot-p a {
+  color: #121212 !important;
+}
+
+.login-heading {
+  font-family: "IowanOldSt";
+  font-size: 32px;
+}
+
+.center-v {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 80% !important;
+  }
+
+  .card-heading {
+    font-size: 22px;
+  }
+
+  .w-50 {
+    width: 100% !important;
+  }
+
+  .navbar-nav {
+    margin-right: 20px;
+  }
+
+  .table {
+    font-size: 12px !important;
+  }
+  .table thead th {
+    white-space: nowrap;
+  }
+
+  .t-head th {
+    white-space: nowrap;
+  }
+}
+@media (max-width: 767px) {
+  .w-50 {
+    width: 100% !important;
+  }
+
+  .table {
+    font-size: 11px !important;
+  }
+
+  .w-25 {
+    width: 50% !important;
+  }
+
+  .ss-main .ss-single-selected {
+    height: 35px !important;
+  }
+
+  .btn-icon-custom {
+    padding: 5px 7px !important;
+  }
+
+  .currency-dd .input-group-box .form-control {
+    height: 35px !important;
+  }
+
+  .btn-grp .btn {
+    padding: 1px 10px !important;
+  }
+
+  .valuedate-tab .nav-item .nav-link {
+    width: 100%;
+  }
+}
+@media (max-width: 574px) {
+  .card-heading {
+    font-size: 22px;
+  }
+
+  .w-50 {
+    width: 100% !important;
+  }
+}
+@media (max-width: 320px) {
+  .w-50 {
+    width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

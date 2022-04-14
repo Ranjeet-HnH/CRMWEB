@@ -1,0 +1,29 @@
+<svg id="Icons_KebabMenu" data-name="Icons/KebabMenu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Shape_Sharp" data-name="Shape / Sharp" width="25" height="25" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="1" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9429ff"/>
+      <stop offset="0.362" stop-color="#3e4acf"/>
+      <stop offset="0.686" stop-color="#3127db"/>
+      <stop offset="1" stop-color="#0027a9"/>
+    </linearGradient>
+  </defs>
+  <g id="Group">
+    <g id="Shape_Sharp-2" data-name="Shape / Sharp">
+      <rect id="Rectangle" width="25" height="25" fill="none"/>
+      <g id="Group_3" data-name="Group 3">
+        <rect id="Shape_Sharp-3" data-name="Shape / Sharp" width="25" height="25" fill="none"/>
+        <g id="Mask_Group_5" data-name="Mask Group 5" clip-path="url(#clip-path)">
+          <rect id="State" width="25" height="25" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_3-2" data-name="Group 3" transform="translate(11 4)">
+      <path id="Path" d="M2,0A2,2,0,1,0,4,2,2,2,0,0,0,2,0Z" transform="translate(0 6.5)" fill="url(#linear-gradient)"/>
+      <path id="Path-2" data-name="Path" d="M2,0A2,2,0,1,0,4,2,2,2,0,0,0,2,0Z" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+      <path id="Path-3" data-name="Path" d="M2,0A2,2,0,1,0,4,2,2,2,0,0,0,2,0Z" transform="translate(0 13)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

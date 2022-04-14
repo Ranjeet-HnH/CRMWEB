@@ -1,0 +1,252 @@
+@import "../scss/variables.scss";
+@import "../scss/fonts.scss";
+
+body {
+  font-family: $font-family;
+  font-size: 14px !important;
+  color: $text-color !important;
+  overflow-x: hidden !important;
+  background: #dddedf;
+}
+
+//override bootstrap css
+.card {
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: 0 0.75rem 6rem rgb(56 65 74 / 3%);
+}
+
+//button,input css
+.oneborder-select {
+  border: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px) !important;
+  padding: 0.375rem 5px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $text-color;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-bottom: 1.5px solid $color-grey;
+}
+
+.oneborder-table {
+  border-bottom: 1px solid $color-grey !important;
+}
+
+.btn-custom {
+  padding: 0.54rem 2.75rem !important;
+  border-radius: 0px !important;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px !important;
+}
+
+.btn-icon-custom {
+  padding: 10px 11px !important;
+  border-radius: 0px !important;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.btn-blue {
+  background: $gradient;
+  color: #ffffff !important;
+}
+.btn-outline-blue {
+  color: $blue;
+  border-color: $blue;
+}
+
+.inputbox-one {
+  border: none !important;
+  border-bottom: 1px solid $color-grey !important;
+  border-radius: 0px !important;
+}
+
+.card-heading {
+  font-size: 28px;
+  font-family: $heading-font;
+  margin-bottom: 20px;
+}
+
+//table css
+
+.table > :not(:last-child) > :last-child > * {
+  border-bottom: none !important;
+}
+.table {
+  font-size: 14px !important;
+  border-color: hsl(0 0% 88% / 0.18) !important;
+
+  thead {
+    color: #a4a4a4 !important;
+    th {
+      font-weight: lighter !important;
+    }
+  }
+  tbody {
+    th {
+      color: $grey;
+      font-weight: 500 !important;
+      vertical-align: middle;
+    }
+    tr {
+      td {
+        font-weight: 400 !important;
+        padding: 0.7rem 0.5rem !important;
+        vertical-align: middle;
+      }
+    }
+  }
+  .dropdown-menu {
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: $shadowlight;
+    font-size: 14px !important;
+  }
+}
+.table-custom {
+  tbody th {
+    color: $blue !important;
+  }
+  tbody tr td {
+    text-align: center !important;
+  }
+  thead {
+    color: $blue !important;
+    th {
+      font-weight: 500 !important;
+    }
+  }
+  .t-head {
+    th {
+      color: $grey !important;
+    }
+  }
+}
+
+//login css start
+.bg-image {
+  background-image: linear-gradient(
+      to left,
+      rgb(148 41 255 / 40%),
+      rgb(68 71 210 / 85%)
+    ),
+    url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: 100% center;
+}
+.login-container {
+  padding: 20px;
+  background: #ffffff;
+  .form-control {
+    font-family: $font-family !important;
+    border-radius: 0px !important;
+    border-color: $text-color !important;
+    font-size: 14px !important;
+    padding: 0.7rem 0.75rem !important;
+  }
+  .forgot-p {
+    text-align: right;
+    font-size: 12px;
+    a {
+      color: $text-color !important;
+    }
+  }
+}
+.login-heading {
+  font-family: $heading-font;
+  font-size: 32px;
+}
+.center-v {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+// ----------------------------------responsive css start---------------------------------------------------
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 80% !important;
+  }
+  .card-heading {
+    font-size: 22px;
+  }
+
+  .w-50 {
+    width: 100% !important;
+  }
+  .navbar-nav {
+    margin-right: 20px;
+  }
+  .table {
+    font-size: 12px !important;
+    thead th {
+      white-space: nowrap;
+    }
+  }
+  .t-head th {
+    white-space: nowrap;
+  }
+}
+@media (max-width: 767px) {
+  .w-50 {
+    width: 100% !important;
+  }
+  .table {
+    font-size: 11px !important;
+  }
+  .w-25 {
+    width: 50% !important;
+  }
+  .ss-main .ss-single-selected {
+    height: 35px !important;
+  }
+  .btn-icon-custom {
+    padding: 5px 7px !important;
+  }
+  .currency-dd .input-group-box .form-control {
+    height: 35px !important;
+  }
+  .btn-grp .btn {
+    padding: 1px 10px !important;
+  }
+  .valuedate-tab .nav-item .nav-link {
+    width: 100%;
+  }
+}
+@media (max-width: 574px) {
+  .card-heading {
+    font-size: 22px;
+  }
+  .w-50 {
+    width: 100% !important;
+  }
+}
+@media (max-width: 414px) {
+}
+@media (max-width: 320px) {
+  .w-50 {
+    width: 100% !important;
+  }
+}
+
+// ----------------------------------responsive css end---------------------------------------------------

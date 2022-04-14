@@ -1,0 +1,50 @@
+<div class="bg-image">
+    <div class="container h-100">
+        <div class="row justify-content-center center-v">
+          <div class="col-lg-5 col-md-6 col-sm-6">
+            <div class="login-container shadow">
+              <div class="text-center mb-3">
+                <h2 class="login-heading">Login</h2>
+              </div>
+              <div class="login-body">
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                  <div class="form-group">
+                      <div class="mb-3">
+                          <input type="text" class="form-control icon-email" placeholder="Your Username "
+                              autoFocus formControlName="username" />
+
+                          <div *ngIf="f['username'].invalid && ( f['username'].dirty || f['username'].touched)"
+                              class="invalid-feedback d-inline">
+                              <div *ngIf="f['username'].errors && f['username'].errors['required']">UseName is
+                                  required.</div>
+                          </div>
+
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="mb-2">
+                          <input type="password" class="form-control icon-psd" autoFocus
+                              placeholder="Your Password" formControlName="password" />
+                          <div *ngIf=" f['password'].invalid && ( f['password'].dirty || f['password'].touched)"
+                              class="invalid-feedback d-inline">
+                              <div *ngIf="f['password'].errors && f['password'].errors['required']">
+                                  Password is required.
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="mb-4 forgot-p">
+                      <a href="">Forgot Password</a>
+                  </div>
+                  <div class="d-grid">
+                      <button [disabled]="!loginForm.valid" type="submit" id="next-form"
+                          class="btn btn-custom btn-blue" routerLink="/dashboard">Login</button>
+                  </div>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<router-outlet></router-outlet>
